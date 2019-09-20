@@ -1,4 +1,4 @@
-CREATE TABLE `social`.`post_comments`
+CREATE TABLE `pahichaan`.`post_comments`
   (
      `id`         INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
      `post_body`  TEXT NOT NULL,

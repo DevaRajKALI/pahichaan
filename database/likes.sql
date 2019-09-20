@@ -1,4 +1,4 @@
-CREATE TABLE `social`.`likes`
+CREATE TABLE `pahichaan`.`likes`
   (
      `id`       INT NOT NULL auto_increment,
      `username` VARCHAR(100) NOT NULL,
