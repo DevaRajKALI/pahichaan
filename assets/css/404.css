@@ -1,0 +1,9 @@
+body {
+  /* The image used */
+  width: 100%;
+  float: right;
+  background-image: url("../images/404.png");
+
+  /* Full height */
+  background-size: cover;
+}

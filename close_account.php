@@ -1,0 +1,36 @@
+<?php
+include("includes/header.php");
+
+if (isset($_POST['cancel'])) {
+    header("Location: settings.php");
+}
+
+/* 
+20:39:20 23 Sep, 2019 by Arjun Adhikari
+If user wants to close account. 
+*/
+if (isset($_POST['close_account'])) {
+    $close_query = mysqli_query($con, "UPDATE users SET user_closed='yes' WHERE username='$userLoggedIn'");
+    session_destroy();
+    header("Location: register.php");
+}
+?>
+
+<!-- 
+20:40:20 23 Sep, 2019 by Arjun Adhikari
+Display (form) logic for closing account.
+-->
+<div class="main_column column">
+
+    <h4>Close Account</h4>
+
+    Are you sure you want to close your account?<br><br>
+    Closing your account will hide your profile and all your activity from other users.<br><br>
+    You can re-open your account at any time by simply logging in.<br><br>
+
+    <form action="close_account.php" method="POST">
+        <input type="submit" name="close_account" id="close_account" value="Yes! Close it!" class="danger settings_submit">
+        <input type="submit" name="cancel" id="update_details" value="No way!" class="info settings_submit">
+    </form>
+
+</div>

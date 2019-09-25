@@ -1,0 +1,37 @@
+body {
+  width: 100%;
+  float: right;
+  background-image: url("../images/block.jpg");
+
+  /* Full height */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blk_action {
+  margin-top: 40%;
+  margin-left: 44%;
+
+  padding: 10px;
+  background: none;
+  border: 2px solid #40c6f4;
+  border-radius: 10px;
+  outline: none;
+
+  box-shadow: 0 0 10px #15cbb8;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  background: linear-gradient(to right, #12cbc4, #a3cb38);
+}
+
+.blk_action a {
+  text-decoration: none;
+}
+
+.blk_msg {
+  position: absolute;
+  margin-top: 22%;
+  margin-left: 33%;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+}

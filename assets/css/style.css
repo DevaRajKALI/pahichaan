@@ -1,0 +1,598 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-ExtraBold;
+  src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
+}
+
+
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  line-height: 17px;
+  background-color: #e6eaeb;
+}
+
+a {
+  color: #20aae5;
+  text-decoration: none;
+}
+
+.top_bar {
+  width: 100%;
+  min-width: 1050px;
+  margin: 0 0 10px 0;
+  display: inline-flex;
+  position: fixed;
+  z-index: 10;
+  display: block;
+  height: 60px;
+  background: linear-gradient(to right, #12cbc4, #a3cb38);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.logo a {
+  margin-left: 10px;
+  font-size: 180%;
+  position: relative;
+  top: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo a img {
+  width: 23px;
+  height: auto;
+}
+
+.logo a:hover {
+  color: #2c6c96;
+}
+
+.top_bar nav a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 5px;
+  top: -10px;
+}
+
+.top_bar nav a:hover {
+  color: #16a085;
+}
+
+.top_bar nav {
+  float: right;
+  right: 1px;
+  position: absolute;
+  margin: 10px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  top: 80px;
+  position: relative;
+  padding: 0 10px;
+  width: 75%;
+  min-width: 950px;
+}
+
+.column {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px #d3d3d3;
+  z-index: -1;
+}
+
+.user_details {
+  width: 90%;
+  margin-left: 10%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.user_details_left_right {
+  width: 125px;
+  display: inline-block;
+  position: absolute;
+}
+
+.user_details img {
+  height: 125px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.main_column {
+  float: right;
+  width: 90%;
+  z-index: -1;
+  min-height: 10px;
+}
+
+.post_form {
+  width: 100;
+}
+
+#post_body {
+  margin-top: 4px;
+}
+
+#post_button {
+  float: right;
+}
+
+.post_form textarea {
+  width: 81%;
+  height: 60px;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: 1px solid #d3d3d3;
+  font-size: 12px;
+  padding: 5px;
+}
+
+textarea:focus {
+  outline: 0;
+}
+
+.post_form input[type="submit"] {
+  width: 10%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  box-shadow: 2px 2px 1px #d3d3d3;
+  font-size: 90%;
+  /* position: absolute; */
+  outline: 0;
+  float: left;
+}
+
+.post_form input[type="submit"]:active {
+  padding: 5px 4px 4px 5px;
+}
+
+.status_post {
+  width: 96%;
+  font-size: 15px;
+  padding: 0px 5px;
+  min-height: 75px;
+  cursor: pointer;
+}
+
+#loading {
+  display: none;
+}
+
+.post_profile_pic {
+  float: left;
+  margin-right: 7px;
+}
+
+.post_profile_pic img {
+  border-radius: 5px;
+}
+
+#comment_iframe {
+  max-height: 250px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px #d3d3d3;
+  margin-top: 5px;
+}
+
+.comment_section {
+  padding: 0 5px 5px 5px;
+}
+
+.comment_section img {
+  margin: 0 3px 3px 3px;
+  border-radius: 3px;
+}
+
+.comment_section hr {
+  color: #fff;
+}
+
+#comment_form textarea {
+  width: 75%;
+  height: 35px;
+  margin-bottom: 15px;
+  color: #616060;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+}
+
+#comment_form input[type="submit"] {
+  width: 15%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  box-shadow: 2px 2px 1px #d3d3d3;
+  font-size: 90%;
+  position: absolute;
+  outline: 0;
+  margin-left: 5px;
+}
+
+#comment_form input[type="submit"]:active {
+  padding: 5px 4px 4px 5px;
+}
+
+.newsfeedPostOptions {
+  padding: 0px;
+  text-decoration: none;
+  color: #20aae5;
+  border: none;
+}
+
+.newsfeedPostOptions iframe {
+  border: 0px;
+  height: 17px;
+  width: 120px;
+}
+
+.comment_like {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #3498db;
+  padding: 0;
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+
+.like_value {
+  display: inline;
+  font-size: 16px;
+}
+
+.profile_left {
+  top: -10px;
+  width: 20%;
+  max-width: 240px;
+  min-width: 130px;
+  height: 100vh;
+  float: left;
+  position: relative;
+  background-color: #3498db;
+  border-right: 10px solid #83d6fe;
+  margin-right: 20px;
+}
+
+.profile_left img {
+  min-width: 80px;
+  width: 55%;
+  margin: 28px;
+  border: 5px solid #83d6fe;
+  border-radius: 100px;
+}
+
+.profile_info {
+  width: 100%;
+  padding: 10px 0 10px 0;
+}
+
+.profile_info {
+  margin: 0 0 0 20px;
+  word-wrap: break-word;
+}
+
+.danger {
+  background-color: #e74c3c;
+}
+
+.warning {
+  background-color: #d6a426;
+}
+
+.default {
+  background-color: #bdc3c7;
+}
+
+.success {
+  background-color: #2ecc71;
+}
+
+.info {
+  background-color: #3498db;
+}
+
+.deep_blue {
+  background-color: #0043f0;
+}
+
+.profile_left input[type="submit"] {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  margin: 7px 7px 7px 7px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.profile_left input[type="submit"]:active {
+  padding: 5px 4px 4px 5px;
+}
+
+#accept_button {
+  width: 15%;
+  height: 28px;
+  border-radius: 5px;
+  margin: 5px;
+  border: none;
+  color: #fff;
+  background-color: #2ecc71;
+}
+
+#ignore_button {
+  width: 15%;
+  height: 28px;
+  border-radius: 5px;
+  margin: 5px;
+  border: none;
+  color: #fff;
+  background-color: #e74c3c;
+}
+
+.form-group textarea {
+  width: 100%;
+  color: #616060;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+}
+
+.delete_button {
+  height: 22px;
+  width: 22px;
+  padding: 0;
+  float: right;
+  border-radius: 4px;
+  right: -15px;
+  position: relative;
+}
+
+.profile_main_column {
+  min-width: 675px;
+  float: left;
+  width: 70px;
+  z-index: -1;
+}
+
+.profile_main_column li {
+  padding: 20px;
+  margin-right: 60px;
+}
+
+.profile_info_bottom {
+  margin: 10px 0 0 20px;
+}
+
+#message_textarea {
+  width: 75%;
+  height: 45px;
+  margin-bottom: 15px;
+  color: #616060;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #1f1f14;
+  padding: 2px;
+}
+
+#message_submit {
+  height: 30px;
+  border-radius: 5px;
+  margin: 7px 7px 7px 17px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  position: absolute;
+}
+
+.message {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: inline-block;
+  color: #fff;
+}
+
+.message#blue {
+  background-color: #3498db;
+  border-color: #2980b9;
+  float: right;
+  margin-bottom: 5px;
+}
+
+.message#green {
+  background-color: #2ecc71;
+  border-color: #27ae60;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.loaded_messages {
+  height: 65%;
+  min-height: 300px;
+  max-height: 400px;
+  overflow: scroll;
+  margin-bottom: 10px;
+}
+
+.loaded_conversations {
+  max-height: 216px;
+  overflow: scroll;
+}
+
+.user_found_messages {
+  border-bottom: 1px solid #d3d3d3;
+  padding: 8px 8px 10px 8px;
+}
+
+.user_found_messages:hover {
+  background-color: #d3d3d3;
+}
+
+.user_found_messages img {
+  height: 35px;
+  float: left;
+}
+
+#grey {
+  color: #8c8c8c;
+}
+
+.resultDisplay {
+  padding: 5px 5px 0 5px;
+  height: 60px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.resultDisplay a {
+  float: none;
+}
+
+.resultDisplay:hover {
+  background-color: #ebebeb;
+  text-decoration: none;
+}
+
+.liveSearchProfilePic img {
+  height: 50px;
+  border-radius: 25px;
+  margin: 1px 12px 0 2px;
+  float: left;
+}
+
+.liveSearchText {
+  background-color: transparent;
+}
+
+.liveSearchText p {
+  margin-left: 10px;
+  font-size: 10px;
+}
+/*
+.nav-pills li{
+	margin: 5px 10px 5px 5px;
+	padding: 3px;
+	border-radius: 5px;
+	color: #3498db;
+}
+
+
+.profile_nav_tabs{
+	margin-bottom: 30px;
+}
+
+*/
+
+.settings_input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+.small_profile_pic {
+  width: 100px;
+  height: auto;
+}
+
+/* NOTE I was here editing. */
+
+/* Hide the cross button. */
+.posted_by button {
+  display: none;
+}
+
+/* 
+23:01:23 24 Sep, 2019 by Arjun Adhikari
+For Dashboard type settings in Profile
+*/
+.lay {
+  flex-flow: column nowrap;
+  text-align: center;
+  padding: 10px;
+  width: 80px;
+  flex: 1;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.lay_red {
+  background: linear-gradient(to right, #c02425, #f0cb35);
+}
+
+.lay_blue {
+  background: linear-gradient(to right, #fc00ff, #00dbde);
+}
+
+.lay_wrapper {
+  display: flex;
+  width: 30%;
+}
+
+.under {
+  margin-top: -15px;
+}
+
+/* 
+00:33:00 25 Sep, 2019 by Arjun Adhikari
+Image Display in Posts 
+*/
+.postedImage img {
+  max-height: 300px;
+  max-width: 100%;
+  display: block;
+  margin: 5px auto;
+}
+
+
+/* TODO Remind to complete these settings page styler. */
+/* 
+.settings_form {
+
+}
+
+.settings_form input[type=text] {
+
+} */

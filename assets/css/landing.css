@@ -1,0 +1,39 @@
+body {
+  /* The image used */
+  width: 100%;
+  float: right;
+  background-image: url("../images/landing.png");
+
+  /* Full height */
+  background-size: cover;
+}
+
+.getstart {
+  margin-top: 17%;
+  margin-left: 42%;
+
+  padding: 10px;
+  background: none;
+  border: 2px solid #40c6f4;
+  border-radius: 10px;
+  outline: none;
+
+  box-shadow: 0 0 10px #15cbb8;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  background: linear-gradient(to right, #12cbc4, #a3cb38);
+}
+
+.title {
+  float: left;
+}
+
+.admin_chooser {
+  font-family: "Montserrat", sans-serif;
+  margin-left:5%;
+  margin-top: 1%;
+}
+
+.admin_chooser a {
+  text-decoration: none;
+}
