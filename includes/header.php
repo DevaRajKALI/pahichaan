@@ -35,7 +35,7 @@ if (isset($_SESSION['username'])) {
 
 	<link rel="stylesheet" href="assets/css/messaging.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/all.css">
+	<link rel="stylesheet" href="assets/css/https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
